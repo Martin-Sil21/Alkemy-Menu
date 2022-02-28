@@ -52,13 +52,14 @@ export default function LogIn() {
             axios.post('http://challenge-react.alkemy.org/', inputs)
 
                 .then((respuesta) => {
-
+                    console.log('SSISSISISISISIS')
                     //respuesta token a redux
                     setLoading(false)
                     setToken(respuesta.data.token)
                     return navigate('/Home')
                 })
                 .catch((error) => {
+                    console.log('NONONONONONOONO')
                     Swal.fire(
                         'Datos incorrectos',
                         'Revise lo ingresado e intente nuevamente',
