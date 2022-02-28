@@ -1,10 +1,12 @@
+import Cartas from "../Cartas/Cartas"
 
-export default function Platos() {
+
+
+export default function Platos(props) {
+
 
     return <div>
-       
-       <h1>Menu</h1>
-       
+        <Cartas respuestaApi={props.respuestaApi} />
     </div>
 
 }

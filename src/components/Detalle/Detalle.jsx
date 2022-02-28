@@ -1,11 +1,25 @@
+// import { useState } from 'react'
+// import Loading from '../Loading/Loading';
+// import axios from 'axios';
 
 
+// export default function Detalle(props) {
+//     // console.log(props,'detaleeee')
 
-export default function Detalle() {
+//     const [loading, SetLoading] = useState();
 
-    return <div>
-        
-            Hola soy Detalle
-        
-    </div>
-}
+    
+
+//     setLoading(true)
+//     axios.get(`https://api.spoonacular.com/recipes/${props.id}/card`)
+//         .then((respuesta) => {
+//             setLoading(false)
+//             setRespuestaApi(respuesta.data.results);
+
+//         })
+//         .catch((error) => {
+//             alert(error);
+//             setLoading(false);
+//         })
+
+// }
